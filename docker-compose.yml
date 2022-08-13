@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  sample:
+    build: .
+    ports:
+      ["3000:3000"]
+    image: mitxpro-dockerapp:tag
+    command: node index.js
